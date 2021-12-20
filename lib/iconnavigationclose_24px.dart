@@ -1,0 +1,39 @@
+import 'package:flutter/material.dart';
+import 'package:adobe_xd/pinned.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+
+class iconnavigationclose_24px extends StatelessWidget {
+  iconnavigationclose_24px({
+    Key? key,
+  }) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: <Widget>[
+        Pinned.fromPins(
+          Pin(start: 0.0, end: 0.0),
+          Pin(start: 0.0, end: 0.0),
+          child:
+              // Adobe XD layer: 'Boundary' (shape)
+              Container(
+            decoration: BoxDecoration(),
+          ),
+        ),
+        Pinned.fromPins(
+          Pin(start: 2.0, end: 2.0),
+          Pin(start: 2.0, end: 2.0),
+          child:
+              // Adobe XD layer: ' ↳Color' (shape)
+              SvgPicture.string(
+            _svg_zapz1b,
+            allowDrawingOutsideViewBox: true,
+            fit: BoxFit.fill,
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+const String _svg_zapz1b =
+    '<svg viewBox="2.0 2.0 20.0 20.0" ><path transform="translate(2.0, 2.0)" d="M 10 20 C 7.325503349304199 20 4.81337833404541 18.96084976196289 2.926379442214966 17.07396125793457 C 1.039280295372009 15.18697261810303 -1.358032335474491e-07 12.67472743988037 -1.358032335474491e-07 10 C -1.358032335474491e-07 7.32560396194458 1.039280295372009 4.813477993011475 2.926379442214966 2.926379442214966 C 4.813477993011475 1.039280295372009 7.32560396194458 -1.358032335474491e-07 10 -1.358032335474491e-07 C 12.67472743988037 -1.358032335474491e-07 15.18697261810303 1.039280295372009 17.07396125793457 2.926379442214966 C 18.96084976196289 4.81337833404541 20 7.325503349304199 20 10 C 20 12.67482662200928 18.96084976196289 15.18707370758057 17.07396125793457 17.07396125793457 C 15.18707370758057 18.96084976196289 12.67482662200928 20 10 20 Z M 10 11.41032409667969 L 10.00071048736572 11.41102504730225 L 13.59013652801514 15.00045013427734 L 15.00045013427734 13.59013652801514 L 11.41031551361084 10 L 15.00045013427734 6.40986442565918 L 13.59013652801514 5.000450611114502 L 10 8.589685440063477 L 6.40986442565918 5.000450611114502 L 5.000450611114502 6.40986442565918 L 8.589685440063477 10 L 5.000450611114502 13.59013652801514 L 6.40986442565918 15.00045013427734 L 9.999290466308594 11.41102504730225 L 10 11.41032409667969 Z" fill="#000000" stroke="none" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /></svg>';
