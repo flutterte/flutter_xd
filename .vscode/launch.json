@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "name": " Flutter_运行选中文件",
+      "type": "dart",
+      "request": "launch",
+ "program":"lib/${fileBasename}",
+//  "program":"${fileBasename}",
+      // "program": "flutter lib\\${fileBasename}",
+      // "program": " ${file}",
+      // "program": "${workspaceFolder}/lib/main_dev.dart",//Target file "lib\main_dev.dart" not found.
+      "args": ["--no-sound-null-safety"]
+    },
+    {
+      "name": "Flutter没有空安全",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "args": ["--no-sound-null-safety"]
+    },
+    {
+      "name": " flutter 预览",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib\\main.preview.dart",
+      "args": ["--no-sound-null-safety"]
+    }
+  ]
+}
